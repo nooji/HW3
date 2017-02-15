@@ -13,7 +13,7 @@ public interface ListInterface<T> {
 	
 	/*Remove item at the index
 	 * @param int for location to remove item
-	 * @return true if item removed and false if not/
+	 * @return item that was removed from the list
 	*/
 	public T removeItem(int index);
 	
@@ -32,10 +32,9 @@ public interface ListInterface<T> {
 	 */
 	public T peekItem(int index);
 	
-	/*Look at all entries in the dequeue
-	 * @return the all entries(class object)
+	/*Print out all the data of the items in the list
 	 */
-	public Object peekAll();
+	public void peekAll();
 	
 	/*Check to see if item exists
 	 * @param an item entry to check for

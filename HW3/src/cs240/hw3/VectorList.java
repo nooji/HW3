@@ -39,8 +39,10 @@ public class VectorList<T> implements ListInterface<T> {
 	}
 
 	@Override
-	public Vector<T> peekAll() {
-		return list;
+	public void peekAll() {
+		for(int i = 0; i < list.size();i++){
+			System.out.println(list.get(i));
+		}
 	}
 
 	@Override

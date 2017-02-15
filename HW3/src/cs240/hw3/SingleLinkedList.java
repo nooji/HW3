@@ -85,8 +85,12 @@ public class SingleLinkedList<T> implements ListInterface<T> {
 	}
 
 	@Override
-	public Object peekAll() {
-		return firstNode.data;
+	public void peekAll() {
+		Node temp = firstNode;
+		for(int i = 0; i < numberOfEntries;i++){
+			System.out.print(temp.data);
+			temp = temp.next;
+		}
 	}
 
 	@Override
